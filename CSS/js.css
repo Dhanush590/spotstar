@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../MADIA/IMAGE/back4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: fit-content;
+   
+}
+
+.head{
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    box-shadow: 0px 0px 4px white;
+    color: white;
+    margin-top: 10%;
+    margin-left: 64%;
+    text-align: center;
+    transition: all 700ms ease-in-out;
+    backdrop-filter: blur(2px);
+}
+.head:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px white;
+}
+
+.lo{
+    margin-top: 40px;
+}
+.main{
+    margin-top: 30px;
+    text-align: center;
+}
+.main input{
+    height: 30px;
+    width: 280px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left:20px;
+    outline: none;
+    border: 1px;
+
+}
+.mani input::placeholder{
+    justify-content: center;
+
+}
+
+.re{
+    margin-left: -176px;
+    margin-top: 20px;
+}
+
+
+.fp{
+    margin-left: 179px;
+    margin-top: -17px;
+}
+.fp a{
+    text-decoration: none;
+    color: white;
+
+}
+.fp a:hover{
+    color: aqua;
+}
+
+.but{
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.but a{
+    padding: 4px 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size:20px;
+    margin-top: 0px;
+}
+
+.but a:hover{
+
+    background-color: black;
+    color: white;
+}
+
+/*---------------------------------------*/
+
+
+.sign a{
+text-decoration: none;
+color: white;
+}
+.sign a:hover{
+    color:rgb(13, 233, 233);
+}
+
+.summ{
+    height: 400px;
+    width: 400px;
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    margin-top: 190px;
+    margin-left: 180px;
+    position: absolute;
+}
+.summ h1{
+    font-weight: bold;
+    font-size:70px;
+    margin-left: 20px;
+}
+
+.summ p{
+    font-weight: bolder;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 150px;
+    margin-top: -20px;
+    filter: brightness(100%);
+    filter: contrast(100%);
+}

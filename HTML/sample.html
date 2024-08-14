@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+
+.poster {
+    margin-top: 130px;
+    margin-right: 110px;
+    cursor: pointer;
+    margin-top: 130px;
+    margin-right: 110px;
+    position: relative;
+    height: 320px; /* Match the image size */
+    overflow: hidden;
+}
+    
+
+.poster img:hover{
+transform: scale(1.1);
+}
+
+.poster img {
+    height: 320px;
+    float: right;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+    </style>
+</head>
+<body>
+<center>
+    <div class="poster">
+        <a id="posterLink" href="https://youtu.be/hIz58G80mkw?si=80vSiQjVFqD5Cp9k">
+            <img id="posterImage" src="../MADIA/IMAGE/movie/dp.jpeg" alt="Movie Poster">
+        </a>
+    </div>
+</center>
+
+<script>
+
+const images = [
+    {
+        src: "../MADIA/IMAGE/movie/dp1.jpeg",
+        link: "https://youtu.be/hIz58G80mkw?si=80vSiQjVFqD5Cp9k"
+    },
+    {
+        src: "../MADIA/IMAGE/movie/dp2.jpeg",
+        link: "https://youtu.be/anotherLink1"
+    },
+    {
+        src: "../MADIA/IMAGE/movie/dp3.jpeg",
+        link: "https://youtu.be/anotherLink2"
+    }
+];
+
+let currentImageIndex = 0;
+const posterImage = document.getElementById("posterImage");
+const posterLink = document.getElementById("posterLink");
+
+posterImage.addEventListener("mouseenter", () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    posterImage.style.opacity = 0;  // Fade out
+
+    setTimeout(() => {
+        posterImage.src = images[currentImageIndex].src;
+        posterLink.href = images[currentImageIndex].link;
+        posterImage.style.opacity = 1;  // Fade in
+    }, 500); // This timeout should match the CSS transition duration
+});
+
+</script>
+    
+</body>
+</html>

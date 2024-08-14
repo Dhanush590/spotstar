@@ -1,0 +1,247 @@
+
+body{
+    background-color: black;
+    height: 90vh;
+}
+
+.user{
+    height: 90px;
+    width: 57px;
+    background-color: rgb(56, 53, 53);
+    padding-left: 15px;
+    padding-top: 20px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.user a{
+    position: absolute;
+    color:white;
+}
+.user .u1{
+    padding-top: -6px;
+    text-align: center;
+    padding-left: 2px;
+}
+.user .u2{
+    padding-top: 45px;
+    text-align: center;
+    padding-left: 5px;
+}
+/*---------main box-------------*/
+.mainbox{
+    height: 550px;
+    margin-top: -110px;
+    margin-left: 80px;
+    border-radius: 10px;
+    width: 1270px;
+    color: white;
+    background-color: rgb(56, 53, 53);
+    position: absolute;
+    background:rgb(92, 85, 85);
+    animation: mymusic 5s infinite;
+}
+  @keyframes mymusic {
+    from {background-color:rgb(53, 70, 77);}
+    to {background-color:rgb(146, 92, 126);}
+  }
+.user1{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color:black;
+    align-items: center;
+    margin-left: 1120px;
+    margin-top: 10px;
+}
+.user1 a{
+    color:white;
+}
+.user2 a{
+    color:white;
+}
+
+.user2{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    margin-top: -38px;
+    margin-left: 1170px;
+   
+}
+
+.user3{ 
+    height: 40px;
+    width: 37px;
+    border-radius:50%;
+    background-color: #000000;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 1220px;
+    padding-left: 4px;
+}
+.user3 a{
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+}
+.user3 a h1{
+    text-align: center;
+    
+}
+
+.user4{
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    margin-left: 895px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top:-57px;
+    
+}
+.user4 a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+} 
+.user4 a h1{
+    display: flex;
+    padding-top: 5px;
+    text-align: center;
+    font-family: initial;
+}
+
+
+.user5{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    margin-top: -38px;
+    margin-left: 70px;
+   
+}
+
+.user5 a{
+    color:white;
+}
+
+.user6{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    margin-left: 20px;
+   
+}
+
+.user6 a{
+    color:white;
+}
+
+
+.user1{
+    transition: all 500ms ease-in-out;
+}
+.user1:hover{
+    transform: scale(1.1);
+}
+.user2{
+    transition: all 500ms ease-in-out;
+}
+.user2:hover{
+    transform: scale(1.1);
+}
+.user3{
+    transition: all 500ms ease-in-out;
+}
+.user3:hover{
+    transform: scale(1.1);
+}
+
+.user4{
+    transition: all 600ms ease-in-out;
+}
+.user4:hover{
+    transform: scale(1.1);
+}
+
+.user5{
+    transition: all 500ms ease-in-out;
+}
+.user5:hover{
+    transform: scale(1.1);
+}
+
+.user6{
+    transition: all 500ms ease-in-out;
+}
+.user6:hover{
+    transform: scale(1.1);
+}
+
+.firstlist{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 210px;
+    width: 1250px;
+    padding: 2px 2px;
+    display: flex;
+} 
+.list1{
+    display: flex;
+    margin: 10px 10px;
+    height: 188px;
+    width: 1240px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.list{
+    height: 60px;
+    width: 270px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color: #302d2d;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+.im{
+    flex-wrap: wrap;
+}
+.im img{
+    height: 60px;
+    width: 60px;
+    margin-right: 230px;
+}
+
+
+.side{
+    margin-top: 8px;
+    margin-left: -80px;
+    height: 75%;
+    width: 7px;
+    background-color: rgb(56, 53, 53);
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+} */

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: black;
+    
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+}
+
+.logo img {
+    position: absolute;
+    height: 150px;
+    margin-top: -320px;
+    margin-left: -680px;
+    filter: brightness(100%);
+    filter: contrast(100%);
+
+}
+
+
+.user {
+    position: absolute;
+    cursor: pointer;
+    color: teal;
+    margin-top: -520px;
+    margin-left: 1140px;
+    font-weight: 20px;
+    padding: 0px 14px;
+
+}
+
+.user a {
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+}
+
+.user a:hover {
+    background-color: rgb(255, 255, 255);
+    color: teal;
+    font-weight: bolder;
+}
+
+.user1 {
+    position: absolute;
+    cursor: pointer;
+    color: teal;
+    margin-top: -520px;
+    margin-left: 825px;
+    font-weight: 20px;
+    padding: 0px 14px;
+
+}
+
+.user1 a {
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+}
+
+.user1 a:hover {
+    background-color: rgb(255, 255, 255);
+    color: teal;
+    font-weight: bolder;
+}
+
+.maniimg {
+    height: 300px;
+    width: 300px;
+    padding: 7px;
+    background-color: #ffffff;
+    margin-left: -900px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px; /* Optional: For rounded corners */
+    border: 10px solid; /* Adjust the width as needed */
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    /* Multi-color gradient border */
+}
+
+.maniimg img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px; /* Optional: For rounded corners */
+    display: block; /* Ensure the image centers within the parent */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+.para {
+    position: absolute;
+    color: white; /* Text color */
+    height: 290px;
+    width: 700px;
+    background-color: #000000; /* Changed to black */
+    margin-left: 400px;
+    padding: 20px;
+    box-shadow: #FFFFFF 1px 1px 15px; /* White shadow */
+    animation: mymusic 5s infinite;
+    cursor: default;
+}
+
+@keyframes mymusic {
+    from {
+        background-color: #333333; /* Dark grey for smooth transition */
+    }
+
+    to {
+        background-color: #888888; /* Light grey for smooth transition */
+    }
+}
+
+.para h1 {
+    color: #FFFFFF; /* Changed to white */
+    font-size: 40px;
+    margin-top: -10px;
+    text-align: center;
+    text-shadow: #000000 1px 1px 15px; /* Black shadow */
+}
+
+.para p {
+    margin-top: -0px;
+    color: #FFFFFF; /* White color for the paragraph text */
+    font-size: 23px;
+    font-family: "Caveat", cursive;
+}
+
+.musicmani {
+    height: 350px;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 22px;
+    flex-wrap: wrap;
+    border: 4px  rgb(255, 255, 255) solid;
+    margin-left:10px;
+    margin-right:10px;
+    transition: all 600ms ease-in-out;
+}
+
+.mani .musicmani .head {
+    flex-wrap: wrap;
+}
+
+.head {
+    padding: 0px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.head img {
+    height: 305px;
+    width: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.musicmani:hover {
+    transform: scale(1.1);
+}
+
+.mani {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 870px;
+    margin-left: 0px;
+    height: 353px;
+
+}
+
+.musicmani audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    margin-top: 1px;
+    background-color: #ffffff;
+    color: #ffffff;
+    outline: none;
+}
+
+.musicmani audio::-webkit-media-controls-play-button {
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+/*------------------------------------*/
+
+.musicmani1 {
+    height: 350px;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 22px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 4px white solid;
+    transition: all 600ms ease-in-out;
+}
+
+.mani1 .musicmani1 .head1 {
+    flex-wrap: wrap;
+}
+
+.head1 {
+    padding: 0px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.head1 img {
+    height: 305px;
+    width: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.musicmani1:hover {
+    transform: scale(1.1);
+}
+
+.mani1 {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1700px;
+    margin-left: 0px;
+    height: 393px;
+}
+
+.musicmani1 audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    margin-top: 1px;
+    background-color: #ffffff;
+    color: #ffffff;
+    outline: none;
+}
+
+.musicmani1 audio::-webkit-media-controls-play-button {
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.musicmani, .musicmani1 {
+    margin-bottom: 20px;
+}

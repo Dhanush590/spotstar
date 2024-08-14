@@ -1,0 +1,75 @@
+.u1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    width: 700px;
+    height:50px;
+    margin-left: 25%;
+    margin-top: 20px;
+     /*display: flex;
+    justify-content: center;*/
+   
+}
+marquee{
+    font-size:30px;
+}
+img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px black;
+    object-fit: cover;
+    transition: transform .1s ease-in;
+}
+#summ{
+    border-color:black;
+    border-style: dotted;
+    border-width: 5px;
+    display: flex;
+}
+
+img:hover{
+    transform: scale(1.1);
+
+}
+.back{
+    height: 30px;
+    width: 70px;
+    color: red;
+}
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+.back2{
+    z-index: -3;
+}
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  @media only screen and (max-width: 600px) {
+    .u1{
+        width: 150px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:url("../MADIA/IMAGE/b4.jpg");
+        background-position:top left;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+    }
+    video {
+        left: 900px;
+    }
+  }

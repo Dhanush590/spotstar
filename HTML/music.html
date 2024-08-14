@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="../MADIA/IMAGE/music.png">
+    <style>
+        .head {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 8px 8px 8px black;
+            object-fit: cover;
+            transition: transform .1s ease-in;
+        }
+
+        .content {
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: absolute;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content div {
+            flex-basis: 25%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+
+        }
+
+        video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -2;
+        }
+
+        body {
+            font-family: Copperplate, Papyrus, fantasy;
+        }
+        @media only screen and (max-width: 600px) {
+    
+    body{
+        background-image:url("../MADIA/IMAGE/b4.jpg");
+        background-position:top left;
+        background-repeat: no-repeat;
+    }
+    video {
+            left: 900px;
+        }
+  }
+    </style>
+</head>
+
+<body>
+    <div class="vio">
+        <video src="../MADIA/VIDEO/back1.mp4.mp4" autoplay autoplay loop plays-inline>
+        </video>
+    </div>
+    <div class="head">
+        <h1>Music</h1>
+    </div>
+    <div class="content">
+        <div>
+            <a href="./YuvanShankarRaja.html"><img src="../MADIA/IMAGE/u1.jpeg" alt=""></a>
+            <h1>Yuvan Shankar Raja</h1>
+        </div>
+        <div>
+            <a href="./dhanush.html"><img src="../MADIA/IMAGE/dhanush.jpeg" alt=""></a>
+            <h1>Dhanush</h1>
+        </div>
+        <div>
+            <a href="./gv.html"><img src="../MADIA/IMAGE/gv.jpeg" alt=""></a>
+            <h1>GV Prakash</h1>
+        </div>
+        <div>
+            <a href="./StephenZechariah.html"><img src="../MADIA/IMAGE/stephenzechariah.jpeg" alt=""></a>
+            <h1>Stephen Zechariah</h1>
+        </div>
+        <div>
+            <a href="hiphop.html"><img src="../MADIA/IMAGE/hiphoptamizha.jpeg" alt=""></a>
+            <h1>Hiphop Tamizha</h1>
+        </div>
+        <div>
+            <a href="./ARRahman.html"><img src="../MADIA/IMAGE/arrahman.jpeg" alt=""></a>
+            <h1>AR Rahman</h1>
+        </div>
+        <div>
+            <a href="./VijayAntony.html"><img src="../MADIA/IMAGE/vijayantony.jpeg" alt=""></a>
+            <h1>Vijay Antony</h1>
+        </div>
+        <div>
+            <a href="./HarrisJayaraj.html"><img src="../MADIA/IMAGE/harrisjayaraj.jpeg" alt=""></a>
+            <h1>Harris Jayaraj</h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

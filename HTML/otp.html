@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verified</title>
+    <link rel="stylesheet" href="../CSS/otp.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="lo">OTP VERIFICATION</h1>
+
+        <div class="main">
+            <input type="text" id="otpInput" maxlength="6" placeholder="Enter six digit OTP" required>
+        </div>
+
+        <div class="re">
+            <label>
+                <a href="#" onclick="sendOTP()">Send OTP</a>
+            </label>
+        </div>
+
+        <div class="fp">
+            <a href="#" onclick="resendOTP()">Resend OTP</a>
+        </div>
+
+        <div class="but">
+            <button  id="verify" onclick="verifyOTP()">VERIFY</button>
+        </div>
+    </div>
+
+    <div class="summ">
+        <h1>Welcome</h1>
+        <h1>Back</h1>
+        <br><br>
+        <p>Welcome to Spotstar! It sounds like a fantastic platform for enjoying movies and music. How can I assist you with Spotstar today?</p>
+    </div>
+
+    <div class="logo">
+        <img src="../MADIA/IMAGE/logo.png" alt="Spotstar Logo">
+    </div>
+
+    <script>
+
+let generatedOTP = "";
+
+function generateOTP() {
+    // Generate a 6-digit OTP
+    return Math.floor(100000 + Math.random() * 900000).toString();
+}
+
+function sendOTP() {
+    generatedOTP = generateOTP();
+    alert("Your OTP is: " + generatedOTP);
+    // In a real application, this OTP would be sent via email or SMS.
+}
+
+function resendOTP() {
+    sendOTP();  // Resend the OTP using the sendOTP function
+}
+
+function verifyOTP() {
+    const enteredOTP = document.getElementById("otpInput").value;
+    
+    if (enteredOTP === generatedOTP) {
+        alert("OTP Verified Successfully!");
+        window.location.href = "../HTML/wcm.html";  // Redirect to the password reset page upon successful verification
+    } else {
+        alert("Invalid OTP. Please try again.");
+    }
+}
+
+// Optionally, send OTP when the page loads
+window.onload = sendOTP;
+    </script>
+</body>
+
+</html>
