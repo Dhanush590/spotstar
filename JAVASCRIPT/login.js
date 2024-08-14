@@ -12,7 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Validate the login credentials
     if (username === storedEmail && password === storedPassword) {
         alert("Login successful!");
-        window.location.href = "../spotstar/HTML/main.html";  // Redirect to the next page
+        window.location.href = "HTML/main.html";  // Redirect to the next page
     } else {
         alert("Invalid username or password. Please try again.");
     }
