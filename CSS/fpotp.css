@@ -126,7 +126,7 @@ body{
     }
 
     .summ {
-        margin-top: 370px;
+        margin-top: 470px;
          margin-left:0px;
     }
     .summ h1{
@@ -139,6 +139,27 @@ body{
     .head:hover{
         transform:none;
         box-shadow: 0px 0px 0px white;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 840px) {
+    .head {
+        margin-top: 13%; /* Example: Adjust the margin for portrait tablets */
+        margin-left: 25%;
+    }
+
+    .summ {
+        margin-top: 650px;
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    .summ h1 {
+        font-size: 50px; /* Scaled font for tablet portrait mode */
+    }
+
+    .summ p {
+        font-size: 30px;
     }
 }
 
